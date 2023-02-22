@@ -1,4 +1,4 @@
 # Portfolio
 My first portfolio.
 
-<p align="center"> <img src="https://tenor.com/view/gif-27597134" />
+![alt text](https://tenor.com/view/gif-27597134 "Logo Title Text 1")
