@@ -6,9 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@300;500;700&display=swap" rel="stylesheet">
     <title>Benjamin Meyer</title>
 </head>
 <body>
-    
+    <div class="container">
+        <nav>
+            <h2>benjamín<span>meyer</span></h2>
+            <ul>
+                <li><a href="#aboutme"><span>SOBRE MI</span></a></li>
+                <li><a href="#projects"><span>PROYECTOS</span></a></li>
+                <li><a href="#contactme"><span>CONTACTARME</span></a></li>
+            </ul>
+        </nav>
+        <header>
+            <div id="aboutme">
+                <img src="/img/me.jpg" id="mepic">
+                <div id="description">
+                    <h2>Sobre mí</h2>
+                    <p>Hola soy Benjamin Meyer, Lorem ipsum dolor sit amet, 
+                        consectetur adipisicing elit. Nemo excepturi perspiciatis, 
+                        et eligendi ullam dignissimos illum nobis quod porro sit saepe quo rem hic vitae, 
+                        veniam beatae cupiditate veritatis voluptatum, Lorem ipsum dolor sit amet, 
+                        consectetur adipisicing elit. Illum temporibus nihil pariatur culpa consequatur omnis, 
+                        excepturi consectetur hic quisquam labore odio debitis cumque minima at aliquid modi similique.</p>
+                    <h3>Tecnologias que uso: <span>(desliza el cursor por encima de los iconos)</span></h3>
+                    <ul>
+                        <li><img src="/img/html5.png"><span>HTML 5</span></li>
+                        <li><img src="/img/css.png"><span>CSS</span></li>
+                        <li><img src="/img/js.png"><span>JavaScript</span></li>
+                        <li><img src="/img/cpp.png"><span>C++</span></li>
+                        <li><img src="/img/python.png"><span>Python</span></li>
+                        <li><img src="/img/git.png"><span>Git</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="aboutme-background"></div>
+        </header>
+        <section id="projects">
+            <h2>Mis proyectos</h2>
+        </section>
+        <section id="contactme">
+            <div id="contactform">
+                <h2>Contactarme</h2>
+                <form action="#">
+                    <div class="itemform">
+                        <input placeholder="Nombre" type="text" name="nombre" id="nombre" minlength="2" maxlength="64" size="32" autocomplete="off" required>
+                    </div>
+                    <div class="itemform">
+                        <input placeholder="Email" type="email" name="email" id="email" minlength="10" maxlength="64" size="32" required>
+                    </div>
+                    <div class="itemform">
+                        <textarea placeholder="Mensaje" name="mensaje" id="mensaje" required></textarea>
+                    </div>
+                    <div class="itemform">
+                        <input type="submit" name="enviar" id="enviar" value="Enviar">
+                    </div>
+                </form>
+            </div>
+            <div id="contact-background"></div>
+            <footer>
+                <h3>Benjamín Meyer | Feb 2023</h3>
+            </footer>
+        </section>
+    </div>
 </body>
 </html>
