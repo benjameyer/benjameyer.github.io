@@ -40,36 +40,36 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 55px;
+    height: 3.8vw;
     width: 100%;
     background-color: #131430;
     position: fixed;
     top: 0;
     z-index: 100;
+    overflow: hidden;
 }
 nav h2 {
-    font-size: 18px;
-    margin-left: 70px;
+    font-size: 1.5vw;
+    margin-left: 6vw;
 }
 nav span {
     font-weight: bold;
 }
 nav ul {
-    font-size: 13px;
+    font-size: 1vw;
     display: flex;
     align-items: center;
-    gap: 20px;
-    margin-right: 70px;
+    gap: 0.5vw;
+    margin-right: 6vw;
 }
 nav li {
-    cursor: pointer;
-    padding: 7px;
-    transition: all 0.3s ease-out, background-color 0.15s;
+    padding: 0.7vw;
+    transition: transform 0.3s ease-out, background-color 0.15s;
 }
 nav li:hover {
     background-color: #313368;
     color: #cccccc;
-    transform: translateY(-2px);
+    transform: translateY(-0.1vw);
 }
 nav li:active {
     background-color: #7171ac;
@@ -84,26 +84,26 @@ nav li:active {
 }
 
 header {
-    margin-top: 55px;
+    margin-top: 3.8vw;
     position: relative;
 }
 
 header, section {
     scroll-snap-align: start;
-    scroll-margin-top: 55px;
-    height: calc(100vh - 55px);
+    scroll-margin-top: 3.8vw;
+    height: calc(100vh - 3.8vw);
     width: 100%;
 }
 
 footer {
     position: absolute;
-    bottom: 7px;
-    right: 7px;
-    padding: 5px 7px;
+    bottom: 0.5vw;
+    right: 0.5vw;
+    padding: 0.4vw 0.6vw;
     width: fit-content;
     background-color: #1a1b40a1;
     color: #ffffffa9;
-    font-size: 10px;
+    font-size: 0.9vw;
 }
 
 /* IDs Classes */
@@ -120,35 +120,38 @@ footer {
     margin: auto;
     z-index: 3;
     align-items: center;
-    padding: 0 40px;
+    padding: 0 3vw;
 }
 #mepic {
     height: 80%;
 }
 #description {
-    padding-left: 30px;
+    padding-left: 3vw;
     align-self: start;
-    margin-top: 65px;
-    font-size: 18px;
+    margin-top: 4vw;
+    font-size: 1.4vw;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 #description h2 {
-    font-size: 50px;
+    font-size: 3vw;
     font-weight: bold;
 }
 #description h3 {
-    margin-top: 30px;
-    font-size: 23px;
+    margin-top: 1.5vw;
+    font-size: 2vw;
     font-weight: 400;
 }
 #description h3 span {
     font-weight: 200;
     font-style: italic;
-    font-size: 18px;
+    font-size: 1.4vw;
     color: #bebebe;
 }
 #description ul {
     display: flex;
-    gap: 5px;
+    flex-wrap: wrap;
+    gap: 0.5vw;
 }
 #description li {
     position: relative;
@@ -165,16 +168,16 @@ footer {
     z-index: -1;
 }
 #description li:hover span {
-    transform: translateY(33px);
+    transform: translateY(88%);
     color: #fff;
 }
 #description li img {
-    width: 80px;
+    width: 6vw;
     cursor: pointer;
     transition: transform 0.5s ease-out;
 }
 #description li:hover img {
-    transform: translateY(-3px);
+    transform: translateY(-9%);
 }
 #aboutme-background {
     background-position: center;
@@ -190,20 +193,20 @@ footer {
 /* PROJECTS */
 
 #projects {
-    height: calc(100vh - 55px);
+    height: calc(100vh - 3.8vw);
     display: flex;
     justify-content: center;
 }
 #projects h2 {
-    font-size: 50px;
+    font-size: 4vw;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 1vw;
 }
 
 /* CONTACT */
 
 #contactme {
-    height: calc(100vh - 55px);
+    height: calc(100vh - 3.8vw);
     width: 100%;
     position: relative;
 }
@@ -218,15 +221,15 @@ footer {
     inset: 0;
     margin: auto;
     z-index: 3;
-    padding: 0 90px;
-    font-size: 35px;
+    padding: 0 6vw;
+    font-size: 3vw;
     font-weight: bold;
 }
 #contactform h2 {
-    margin: 40px 0 15px 0;
-    border-bottom: 3px solid #313368;
+    margin: 3vw 0 1.2vw 0;
+    border-bottom: 0.25vw solid #313368;
     width: fit-content;
-    line-height: 35px;
+    line-height: 2.4vw;
 }
 #contact-background {
     background-position: center;
@@ -241,22 +244,22 @@ footer {
 .itemform {
     display: flex;
     flex-direction: column;
-    margin-bottom: 25px;
+    margin-bottom: 1.8vw;
 }
 .itemform input {
-    height: 40px;
-    padding: 0 5px;
+    height: 2.8vw;
+    padding: 0 0.6vw;
 }
 .itemform textarea{
-    height: 120px;
+    height: 8vw;
     resize: none;
-    padding: 5px 5px;
+    padding: 0.6vw 0.6vw;
 }
 .itemform textarea, .itemform input {
-    width: calc(100% - 10px);
-    font: 200 18px 'Yantramanav', sans-serif;
+    width: calc(100% - 1.2vw);
+    font: 200 1.5vw 'Yantramanav', sans-serif;
     border: none;
-    border-bottom: 3px solid #313368;
+    border-bottom: 0.25vw solid #313368;
     background-color: #131430;
     color: #fff;
 }
@@ -271,14 +274,14 @@ footer {
     color: transparent;
 }
 input[type="submit"] {
-    width: 80px;
-    height: 35px;
+    width: 6.5vw;
+    height: 3vw;
     align-self: end;
     outline: none;
     border: none;
     font-style: normal;
     font-weight: 600;
-    transition: all 0.5s, background-color 0.3s;
+    transition: transform 0.5s, background-color 0.3s;
 }
 input[type="submit"]:focus, input[type="submit"]:hover {
     color: #adadad;
