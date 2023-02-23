@@ -193,7 +193,7 @@ footer {
 /* PROJECTS */
 
 #projects {
-    height: calc(100vh - 3.8vw);
+    height: calc(100vh - 3.7vw);
     display: flex;
     justify-content: center;
 }
@@ -206,7 +206,7 @@ footer {
 /* CONTACT */
 
 #contactme {
-    height: calc(100vh - 3.8vw);
+    height: calc(100vh - 3.7vw);
     width: 100%;
     position: relative;
 }
